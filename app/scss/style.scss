@@ -1,8 +1,135 @@
-html{
-    box-sizing: border-box;
+@import "global";
+@import "vars";
+@import "fonts";
+
+.header__inner{
+    background-color: $yellow;
+    padding: 33px 50px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 118px;
 }
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
+.header__logo{
+    display: flex;
+    background-image: url(../images/logo/logo.svg);
+    width: 30px;
+    height: 30px;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+}
+.header__menu{
+    a{
+        color: #262626;
+        font-size: 14px;
+        line-height: 17px;
+        @include f600;
+    }
+    li{
+        & + li{
+            margin-left: 50px;
+        }
+    }
+    .my-acc{
+        background-color: #000;
+        color: #fff;
+        font-size: 16px;
+        line-height: 20px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+        padding: 12px 13px;
+        border-radius: 5px;
+        @include f500;
+        transition: all .3s;
+        &:hover{
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+.main-img{
+    text-align: center;
+    margin-top: -33px;
+}
+
+.start{
+    margin-bottom: 89px;
+}
+.start__title{
+    @include f700;
+    font-size: 36px;
+    line-height: 54px;
+    max-width: 316px;
+    margin-bottom: 30px;
+}
+.start__btn{
+    display: block;
+    text-align: center;
+    background-color: $yellow;
+    @include f500;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px 30px;
+    max-width: 280px;
+    color: #000;
+    background-color: #ffc31e;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.download__inner{
+    padding: 30px 0 90px;
+    border-top: 1px solid rgba(#000, .1);
+}
+.download__text{
+    font-size: 18px;
+    line-height: 22px;
+    @include f600;
+    color: rgba(#000, .5);
+    margin-bottom: 19px;
+}
+.download__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.download__item{
+    color: #000;
+    max-width: 280px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    transition: all .3s;
+    &-box{
+        display: flex;
+        align-items: center;
+    }
+    img{
+        margin-right: 8px;
+        border-radius: 50%;
+    }
+    .download__install-btn{
+        @include f500;
+        display: block;
+        padding: 8px 12px 7px;
+        background-color: $yellow;
+        border-radius: 22px;
+        color: #000;
+        opacity: 0;
+        transition: all .3s;
+        margin-right: 50px;
+    }
+    &:hover{
+        border-color: #000;
+        .download__install-btn{
+            opacity: 1;
+            margin-right: 0;
+        }
+    }
+}
+.download__browser-name{
+    @include f500;
+    font-size: 18px;
+    line-height: 22px;
 }
