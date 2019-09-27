@@ -1,5 +1,6 @@
 html{
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 *,
 *::before,
@@ -8,6 +9,7 @@ html{
 }
 body{
    color: #000;
+   overflow: hidden;
 }
 ul{
     list-style: none;

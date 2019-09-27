@@ -1,0 +1,106 @@
+@media (max-width: 1100px){
+   .main-img__inner{
+      background-position: -100px center;
+   }
+}
+@media (max-width: 980px){
+   .main-img__inner{
+      background-position: -300px center;
+   }
+}
+
+@media (max-width: 755px){
+   .burger{
+      display: block;
+   }
+   .header__inner {
+      padding: 20px 20px;
+      min-height: 70px;
+      position: relative;
+   }
+   .header__menu{
+      display: none;
+      width: 100%;
+      position: absolute;
+      height: 100vh;
+      background-color: rgba(#000, .9);
+      left: 0;
+      top: 70px;
+      li{
+         width: 100%;
+         background-color: #fff;
+         min-height: 60px;
+         display: flex;
+         align-items: center;
+         border-top: 1px solid #000;
+         & + li{
+            margin-left: 0;
+            
+         }
+         a{
+            width: 100%;
+            display: block;
+            min-height: 60px;
+            display: flex;
+            align-items: center; 
+            padding-left: 20px;
+         }
+      }
+      .my-acc{
+         display: block;
+         width: 100%;
+         border-radius: 0;
+         padding: 0;
+         box-shadow: none;
+         min-height: 60px;
+         display: flex;
+         align-items: center;
+         padding-left: 20px;
+      }
+      .black-link{
+         background-color: #000;
+      }
+   }
+   .main-img__inner{
+      margin-top: 0;
+      background-position: -500px center;
+   }
+   .start__title {
+      margin-top: 50px;
+      font-size: 24px;
+      line-height: 36px;
+      max-width: 248px;
+   }
+   .download__item .download__install-btn{
+      display: none;
+   }
+}
+
+
+@media (max-width: 580px){
+   .main-img__inner{
+      margin-top: 0;
+      background-position: -700px center;
+   }
+   .download__browser-name{
+      font-size: 14px;
+   }
+}
+@media (max-width: 380px){
+   .main-img__inner{
+      margin-top: 0;
+      background-position: -760px center;
+   }
+   .download__item{
+      padding: 6px;
+      & + &{
+         margin-left: 7px;
+      }
+   }
+}
+
+@media (min-width: 755px){
+   .header__menu{
+      display: block !important;
+   }
+}

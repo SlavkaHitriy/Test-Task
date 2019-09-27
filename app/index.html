@@ -14,23 +14,26 @@
 
     <header class="header">
         <div class="header__inner">
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <a class="header__logo" href="#">
                 <img src="images/logo/text.svg" alt="">
             </a>
-            <div class="header__content">
-                <nav class="header__menu">
-                    <ul class="header__menu-list">
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a class="my-acc" href="#">My Account</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li class="black-link"><a class="my-acc" href="#">My Account</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <section class="main-img">
-        <img src="images/main/main-img.png" alt="">
+        <div class="main-img__inner"></div>
     </section>
 
     <section class="start">
@@ -51,34 +54,34 @@
                 </div>
                 <div class="download__box">
                     <div class="download__item">
-                        <div class="download__item-box">
+                        <a class="download__item-box" href="#">
                             <img src="images/browsers/safari.jpg" alt="">
                             <div class="download__browser-name">
                                 Safari
                             </div>
-                        </div>
+                        </a>
                         <a class="download__install-btn" href="#">
                             Install
                         </a>
                     </div>
                     <div class="download__item">
-                        <div class="download__item-box">
+                        <a class="download__item-box" href="#">
                             <img src="images/browsers/chrome.jpg" alt="">
                             <div class="download__browser-name">
                                 Chrome
                             </div>
-                        </div>
+                        </a>
                         <a class="download__install-btn" href="#">
                             Install
                         </a>
                     </div>
                     <div class="download__item">
-                        <div class="download__item-box">
+                        <a class="download__item-box" href="#">
                             <img src="images/browsers/opera.jpg" alt="">
                             <div class="download__browser-name">
                                 Opera
                             </div>
-                        </div>
+                        </a>
                         <a class="download__install-btn" href="#">
                             Install
                         </a>
@@ -90,7 +93,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
